@@ -1,0 +1,22 @@
+// ==UserScript==
+// @name         Alert Prank Userscript
+// @namespace    https://tampermonkey.net/
+// @version      1.1
+// @description  Install this on someone's device and watch them be confused and annoyed.
+// @author       purefishmonke
+// @match        https://*/*
+// @license      MIT
+// ==/UserScript==
+
+///Config///
+var txt = "Bozo!" //Change the text inside the "" to customize the message
+var time = "0" //Change the number inside the "" to cutomize the time until the alert pops up again after it gets closed (time in ms) (0 = Insantly)
+
+///Script (Do not edit)///
+
+function start(){
+    alert(txt);
+    setTimeout(start, time);
+}
+
+start();
