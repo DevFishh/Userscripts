@@ -1,21 +1,20 @@
 // ==UserScript==
 // @name         Alert Messages
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @homepage     https://greasyfork.org/en/users/946530-purefishmonke
+// @version      2.3
 // @description  sends an alert when you press a certain button on your keyboard
+// @downloadURL  https://greasyfork.org/en/scripts/449676-tab-spammer
+// @updateURL    https://greasyfork.org/en/scripts/449676-tab-spammer
+// @supportURL   https://discord.io/BIGfisHInc
 // @author       purefishmonke
 // @match        https://*/*
-// @licence      MIT
+// @license      MIT
 // ==/UserScript==
 
 ///Config///
-var txt = "Hello World!" //Text The Alert Shows
-var btn = 192 //Keycode of the button that triggers the alert. (Default button is the ` button) You can find keycodes at https://keycodes.info
+var txt="Hello World!" //Text The Alert Shows
+var btn=192 //Keycode of the button that triggers the alert. (Default button is the ` button) You can find keycodes at https://keycodes.info
 
 ///Script (Do not edit)///
-
-window.onkeydown = function(event) {
-   if (event.keyCode === btn) {
-      alert(txt);
-   }
-};
+window.onkeydown=function(event){if(event.keyCode===btn){alert(txt);}};
