@@ -1,7 +1,7 @@
-## Userscripts
+# Userscripts
 This respository contains Userscripts I have coded. 
 
-# What is a userscript?
+What is a userscript?
 
 Userscripts are lines of JavaScript code which can be injected into a web browser with an extension/addon, and they can change many things and perform many actions. 
 
