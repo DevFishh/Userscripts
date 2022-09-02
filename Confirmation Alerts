@@ -1,0 +1,20 @@
+// ==UserScript==
+// @name         Confirmation Alerts
+// @namespace    http://tampermonkey.net/
+// @homepage     https://greasyfork.org/users/946530-purefishmonke
+// @version      1.1
+// @description  Confirmation alert template
+// @supportURL   https://discord.io/BIGfisHInc
+// @author       purefishmonke
+// @match        https://*/*
+// @license      MIT
+// ==/UserScript==
+ 
+///Config///
+var keybind=192//192=BACKTICK (`)
+var conftxt="Click A Button"
+var confrmtxt="Confirmed"
+var canceltxt="Cancelled"
+ 
+///Script (Do not edit)///
+window.onkeydown=function(event){if(event.keyCode===keybind){if(confirm(conftxt)==true){alert(confrmtxt)}else{alert(canceltxt)}}}
