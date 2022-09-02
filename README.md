@@ -1,4 +1,4 @@
-This respository contains Userscripts I have coded. 
+This repository contains Userscripts I have coded. 
 
 --What is a userscript?--
 
