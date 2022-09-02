@@ -1,0 +1,21 @@
+// ==UserScript==
+// @name         Console Spammer
+// @namespace    http://tampermonkey.net/
+// @homepage     https://greasyfork.org/users/946530-purefishmonke
+// @version      1.3
+// @description  Spams the chrome developer console (CTRL+SHIFT+J) with messages of your choice
+// @downloadURL  https://greasyfork.org/en/scripts/449676-tab-spammer
+// @updateURL    https://greasyfork.org/en/scripts/449676-tab-spammer
+// @supportURL   https://discord.io/BIGfisHInc
+// @author       purefishmonke
+// @match        https://*/*
+// @license      MIT
+// ==/UserScript==
+
+///Config///
+var txt="Hello World!"//Text which is logged in the console
+var speed="0"//Time (in ms) that the console logs the next line (0 = Instantly)
+
+///Script (Do not edit)///
+
+function startSpam(){console.log(txt);console.log(txt );setTimeout(startSpam,speed)}startSpam();
