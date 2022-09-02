@@ -1,22 +1,20 @@
 // ==UserScript==
 // @name         Alert Prank Userscript
 // @namespace    https://tampermonkey.net/
-// @version      1.1
+// @homepage     https://greasyfork.org/users/946530-purefishmonke
+// @version      1.4
 // @description  Install this on someone's device and watch them be confused and annoyed.
+// @downloadURL  https://greasyfork.org/en/scripts/449676-tab-spammer
+// @updateURL    https://greasyfork.org/en/scripts/449676-tab-spammer
+// @supportURL   https://discord.io/BIGfisHInc
 // @author       purefishmonke
 // @match        https://*/*
 // @license      MIT
 // ==/UserScript==
 
 ///Config///
-var txt = "Bozo!" //Change the text inside the "" to customize the message
-var time = "0" //Change the number inside the "" to cutomize the time until the alert pops up again after it gets closed (time in ms) (0 = Insantly)
-
+var txt="Bozo!"//Change the text inside the "" to customize the message
+var time="0"//Change the number inside the "" to cutomize the time until the alert pops up again after it gets closed (time in ms) (0 = Insantly)
 ///Script (Do not edit)///
 
-function start(){
-    alert(txt);
-    setTimeout(start, time);
-}
-
-start();
+function start(){alert(txt);setTimeout(start,time);}start();
