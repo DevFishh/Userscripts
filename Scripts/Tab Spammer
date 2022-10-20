@@ -4,18 +4,16 @@
 // @homepage     https://greasyfork.org/user/946530-purefishmonke
 // @version      1.2
 // @description  Spam open tabs of your choice. ⚠️WARNING: Be careful of how you use this⚠️
-// @downloadURL  https://greasyfork.org/en/scripts/449676-tab-spammer
-// @updateURL    https://greasyfork.org/en/scripts/449676-tab-spammer
 // @supportURL   https://discord.io/BIGfisHInc
-// @author       purefishmonke
+// @author       DevFish
 // @match        https://*/*
 // @license      MIT
 // ==/UserScript==
-
+ 
 ///Config///
 var tab = "https://google.com"//Tab which is spam opened.
 var speed = "0" //Speed at which tabs are opened (in milliseconds, 0 = instantly)
-
+ 
 ///Script (do not edit)///
-
+ 
 function spamTabs(){window.open(tab);setTimeout(spamTabs,speed)}spamTabs();
